@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+    <script src="https://kit.fontawesome.com/402ec5a488.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<main>
+    <div class="content">
+        <div class="search">
+            <input type="text" id="textData" autocomplete="off" placeholder="Enter username to check GitHub Info"><i class="fas fa-search" onclick="finalData()"></i>
+        </div>
+
+        <div class="user-info" id="user-info">
+            
+                
+        </div>
+    </div>
+
+    
+
+
+
+
+</div>
+</main>
+<div class="apart" id="apart">
+
+</div>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin:0;
+        padding:0;
+        background: rgb(79, 79, 148);
+        background: linear-gradient(90deg, rgb(99, 99, 199) 0%, rgb(16, 144, 170) 100%,
+        rgb(68, 68, 109) 100%);
+    }
+    .repos{
+        display:flex;
+        width:80%;
+        text-overflow: nowrap;
+        word-wrap: break-word;
+    }
+    i{
+        font-size:35px;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+   ul{
+       list-style: none;
+       float:left;
+       color:white;
+
+   }
+   li {
+       
+       
+       border: 1px solid rgba(255, 255, 255, 0.774);
+       border-radius:8px;
+       height: 150px;
+       width:120px;
+       text-align: center;
+       color:rgb(0, 0, 0);
+       background-color:black;
+       align-items: center;
+       text-align: center;
+       padding-top: 10px;
+       word-wrap: break-word;
+       font-style:none;
+       vertical-align:middle;
+       
+   }
+   li a{
+       color: rgb(255, 255, 255);
+       
+       align-items: center;
+       text-align: center;
+       
+       
+   }
+   .apart h2{
+       text-align: center;
+       background-color:white;
+       color: black;
+       border-radius:25px;
+   }
+    .ffr{
+        display: flex;
+        text-align: center;
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    .ffr h3{
+        margin-right: 40px;
+    }
+    .pracrp{
+        display: flex;
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    .pracrp h4{
+        margin-right: 40px;
+    }
+    .apart{
+        color:white;
+    }
+    main{
+        
+        align-items:center;
+        justify-content: center;
+        vertical-align: middle;
+        margin:auto; 
+        border-radius:8px;
+        width: 80%;
+    }
+    .content{
+        align-items:center;
+        text-align:center;
+        padding-top: 20px;
+    }
+    .search{
+        align-items:center;
+    }
+    .photo img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    input[type="text"]{
+        height: 50px;
+        width: 280px;
+        text-align:center;
+        border-radius: 8px;
+        background: rgba(104, 139, 137, 0.829);
+        box-shadow: 8px 15px 14px rgba(197, 196, 196, 0.404);
+        outline: none;
+    }
+    ::placeholder{
+        color: rgb(247, 247, 247);
+        font-size:14px;
+    }
+    .user-info{
+        word-wrap: break-word;
+        margin-top: 60px;
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color:rgb(255, 255, 255);
+        border-radius:18px;
+        text-align:center;
+        
+
+    }
+    
+    .text-info {
+        text-align:center;
+        margin-top: 45px;
+        align-items:center;
+        
+    }
+    .user-info img{
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    @media(min-width:1000px){
+        .ffr{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+        justify-content: space-between;
+    }
+    
+    .pracrp{
+        display: flex;
+        padding-left: 40px;
+        justify-content: space-between;
+    }
+    }
+    
+    @media(max-width:700px){
+        main{
+        
+        align-items:center;
+        justify-content: center;
+        vertical-align: middle;
+        margin:auto; 
+        border-radius:8px;
+        width: 90%;
+    }
+    .pracrp{
+        font-size:14px;
+        padding-left: 25px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .ffr{
+        display:flex;
+        font-size:12px;
+        padding-left: 15px;
+        
+        justify-content: space-between;
+    }
+    }
+   
+</style>
+</body>
+</html>
